@@ -6,11 +6,11 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home';
 import { AppRoutingModule } from './app.routing';
 import { HttpClientModule } from '@angular/common/http';
-import { AngularFontAwesomeModule } from 'angular-font-awesome';
-import {ButtonModule} from 'primeng/button';
-import {ProgressSpinnerModule} from 'primeng/progressspinner';
 import { NavbarComponent } from './navbar/navbar.component';
-import {MenuModule} from 'primeng/menu';
+import { ExperienceComponent } from './experience';
+import { EducationComponent } from './education';
+import { SkillsComponent } from './skills';
+import { InterestsComponent } from './interests';
 
 
 @NgModule({
@@ -18,13 +18,15 @@ import {MenuModule} from 'primeng/menu';
     AppComponent,
     HomeComponent,
     NavbarComponent,
+    ExperienceComponent,
+    EducationComponent,
+    SkillsComponent,
+    InterestsComponent,
   ],
   imports: [
     AppRoutingModule,
     BrowserModule,
     HttpClientModule,
-    AngularFontAwesomeModule,
-    MenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

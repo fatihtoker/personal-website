@@ -1,0 +1,18 @@
+@import "variables";
+
+.bg-primary {
+  background-color: $dark-yellow !important;
+}
+
+.text-primary {
+  color: $dark-yellow !important;
+}
+
+a {
+  color: $dark-yellow;
+  &:hover,
+  &:focus,
+  &:active {
+    color: darken($dark-yellow, 15%);
+  }
+}
