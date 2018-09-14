@@ -2,28 +2,16 @@
   <a class="navbar-brand">
     <span class="d-block d-lg-none">Fatih Toker</span>
     <span class="d-none d-lg-block">
-          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="../../assets/img/profile.jpeg" alt="">
+          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" routerLink="/" src="../../assets/img/profile.jpeg" alt="">
         </span>
   </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler" type="button" (click)="toggleMenu()">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav">
+  <div class="collapse navbar-collapse" [style.display]="displayState" fxLayout="column">
+    <ul class="navbar-nav" *ngFor="let menu of menus">
       <li class="nav-item">
-        <a class="nav-link" routerLink="/">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/experience">Experience</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/education">Education</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/skills">Skills</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/interests">Interests</a>
+        <a class="nav-link" [routerLink]="menu.routerLink" (click)="toggleMenu()">{{ menu.name }}</a>
       </li>
     </ul>
   </div>

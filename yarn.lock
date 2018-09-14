@@ -33,6 +33,12 @@
   dependencies:
     tslib "^1.7.1"
 
+"@angular/cdk@5.0.0":
+  version "5.0.0"
+  resolved "https://registry.npmjs.org/@angular/cdk/-/cdk-5.0.0.tgz#d7cb3294c9e3cc37d3d41c33e6beb044e84636c3"
+  dependencies:
+    tslib "^1.7.1"
+
 "@angular/cli@~1.7.4":
   version "1.7.4"
   resolved "http://registry.npmjs.org/@angular/cli/-/cli-1.7.4.tgz#b6c31b5fc6f8ea07e55b1b01a26422f5358a4ea6"
@@ -125,6 +131,12 @@
   dependencies:
     tslib "^1.7.1"
 
+"@angular/flex-layout@5.0.0-beta.15":
+  version "5.0.0-beta.15"
+  resolved "https://registry.npmjs.org/@angular/flex-layout/-/flex-layout-5.0.0-beta.15.tgz#ae1aeac30d0370190ec6af0ac1fa5633c6547409"
+  dependencies:
+    tslib "^1.7.1"
+
 "@angular/forms@^5.2.0":
   version "5.2.11"
   resolved "https://registry.npmjs.org/@angular/forms/-/forms-5.2.11.tgz#712534fa317e194caa452d0c1a8efc72f5e040d6"
@@ -162,6 +174,10 @@
 "@fortawesome/fontawesome-free@^5.3.1":
   version "5.3.1"
   resolved "https://registry.npmjs.org/@fortawesome/fontawesome-free/-/fontawesome-free-5.3.1.tgz#5466b8f31c1f493a96754c1426c25796d0633dd9"
+
+"@ng-bootstrap/ng-bootstrap@2.0.0":
+  version "2.0.0"
+  resolved "https://registry.npmjs.org/@ng-bootstrap/ng-bootstrap/-/ng-bootstrap-2.0.0.tgz#65f78c7dd5a8ac424f44bb2050a9eab247cdeb0c"
 
 "@ngtools/json-schema@1.2.0":
   version "1.2.0"

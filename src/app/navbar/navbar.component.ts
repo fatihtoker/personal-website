@@ -6,6 +6,38 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
+  displayState = 'none';
+  menus = [];
   ngOnInit() {
+    this.menus.push(
+      {
+        name: 'About',
+        routerLink: '/about',
+      },
+      {
+        name: 'Experience',
+        routerLink: '/experience'
+      },
+      {
+        name: 'Education',
+        routerLink: '/education'
+      },
+      {
+        name: 'Skills',
+        routerLink: '/skills'
+      },
+      {
+        name: 'Interests',
+        routerLink: '/interests'
+      }
+      );
+  }
+
+  toggleMenu() {
+    if (this.displayState === 'block') {
+      this.displayState = 'none';
+    } else {
+      this.displayState = 'block';
+    }
   }
 }

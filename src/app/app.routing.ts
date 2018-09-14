@@ -8,6 +8,7 @@ import {InterestsComponent} from './interests';
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
+  { path: 'about', component: HomeComponent},
   { path: 'experience', component: ExperienceComponent},
   { path: 'education', component: EducationComponent},
   { path: 'skills', component: SkillsComponent},

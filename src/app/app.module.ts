@@ -11,6 +11,11 @@ import { ExperienceComponent } from './experience';
 import { EducationComponent } from './education';
 import { SkillsComponent } from './skills';
 import { InterestsComponent } from './interests';
+import { LandingComponent } from './landing';
+import { NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
+import {FlexLayoutModule} from '@angular/flex-layout';
+
+
 
 
 @NgModule({
@@ -22,11 +27,14 @@ import { InterestsComponent } from './interests';
     EducationComponent,
     SkillsComponent,
     InterestsComponent,
+    LandingComponent,
   ],
   imports: [
     AppRoutingModule,
     BrowserModule,
     HttpClientModule,
+    NgbTooltipModule.forRoot(),
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
