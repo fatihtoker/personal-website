@@ -14,6 +14,7 @@ import { InterestsComponent } from './interests';
 import { LandingComponent } from './landing';
 import { NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
 import {FlexLayoutModule} from '@angular/flex-layout';
+import { ProjectsComponent } from './projects';
 
 
 
@@ -28,6 +29,7 @@ import {FlexLayoutModule} from '@angular/flex-layout';
     SkillsComponent,
     InterestsComponent,
     LandingComponent,
+    ProjectsComponent,
   ],
   imports: [
     AppRoutingModule,

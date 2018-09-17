@@ -5,6 +5,7 @@ import {ExperienceComponent} from './experience';
 import {EducationComponent} from './education';
 import {SkillsComponent} from './skills';
 import {InterestsComponent} from './interests';
+import {ProjectsComponent} from './projects';
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'experience', component: ExperienceComponent},
   { path: 'education', component: EducationComponent},
   { path: 'skills', component: SkillsComponent},
+  { path: 'projects', component: ProjectsComponent},
   { path: 'interests', component: InterestsComponent}
 ];
 

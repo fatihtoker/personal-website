@@ -1,0 +1,25 @@
+<section class="resume-section p-3 p-lg-5 d-flex flex-column">
+  <div class="my-auto">
+    <h2 class="mb-5">Projects</h2>
+
+    <ng-container *ngFor="let item of items;">
+      <div class="resume-item d-flex flex-column flex-md-row mb-5">
+        <div class="resume-content mr-auto">
+          <h3 class="mb-0">{{ item.title }}</h3>
+          <div class="subheading mb-3" style="color: #343a40;">
+            <ul class="list-inline dev-icons">
+              <li class="list-inline-item" *ngFor="let tech of item.techs;">
+                <i [class]="tech.icon" [ngbTooltip]="tech.tooltip"></i>
+              </li>
+            </ul>
+          </div>
+          <p>{{ item.desc }}</p>
+        </div>
+        <div class="resume-date text-md-right">
+          <span class="dev-icons"><a [href]="item.href" target="_blank"><i class="fa fa-external-link-alt"></i></a></span>
+        </div>
+      </div>
+      <hr>
+    </ng-container>
+  </div>
+</section>
