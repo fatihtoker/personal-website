@@ -105,6 +105,18 @@ export class ProjectsComponent implements OnInit {
         desc: 'A social advertising & communication web application. (Group thesis project for ' +
         'bachelor\'s degree )',
         href: 'https://github.com/barhantas/bobo'
+      },
+      {
+        title: 'Personal Website',
+        techs: [
+          {
+            icon: 'fab fa-angular',
+            tooltip: 'version 5.2'
+          }
+        ],
+        desc: 'My online resume including necessary information. Generated with ' +
+        'Angular CLI. Designed with a free to use template.',
+        href: 'https://github.com/fatihtoker/personal-website'
       }
     );
   }
