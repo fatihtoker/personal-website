@@ -16,3 +16,7 @@ a {
     color: darken($dark-yellow, 15%);
   }
 }
+
+.nav-link.active {
+  color: $dark-yellow !important;
+}

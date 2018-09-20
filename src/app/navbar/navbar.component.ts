@@ -8,40 +8,55 @@ import { Component, OnInit } from '@angular/core';
 export class NavbarComponent implements OnInit {
   displayState = 'none';
   menus = [];
+  constructor() {
+  }
   ngOnInit() {
     this.menus.push(
       {
         name: 'About',
         routerLink: '/about',
+        active: false
       },
       {
         name: 'Experience',
-        routerLink: '/experience'
+        routerLink: '/experience',
+        active: false
       },
       {
         name: 'Education',
-        routerLink: '/education'
+        routerLink: '/education',
+        active: false
       },
       {
         name: 'Skills',
-        routerLink: '/skills'
+        routerLink: '/skills',
+        active: false
       },
       {
         name: 'Projects',
-        routerLink: '/projects'
+        routerLink: '/projects',
+        active: false
       },
       {
         name: 'Interests',
-        routerLink: '/interests'
+        routerLink: '/interests',
+        active: false
       }
       );
   }
 
-  toggleMenu() {
+  toggleMenu(routerLink = '') {
     if (this.displayState === 'block') {
       this.displayState = 'none';
     } else {
       this.displayState = 'block';
+    }
+    for (const i of this.menus) {
+      if (i.routerLink === routerLink) {
+        i.active = true;
+        continue;
+      }
+      i.active = false;
     }
   }
 }

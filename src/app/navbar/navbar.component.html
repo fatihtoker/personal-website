@@ -2,7 +2,7 @@
   <a class="navbar-brand">
     <span class="d-block d-lg-none">Fatih Toker</span>
     <span class="d-none d-lg-block">
-          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" routerLink="/" src="../../assets/img/profile.jpeg" alt="">
+          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" routerLink="/" (click)="toggleMenu('/about')" src="../../assets/img/profile.jpeg" alt="">
         </span>
   </a>
   <button class="navbar-toggler" type="button" (click)="toggleMenu()">
@@ -11,7 +11,7 @@
   <div class="collapse navbar-collapse" [style.display]="displayState" fxLayout="column">
     <ul class="navbar-nav" *ngFor="let menu of menus">
       <li class="nav-item">
-        <a class="nav-link" [routerLink]="menu.routerLink" (click)="toggleMenu()">{{ menu.name }}</a>
+        <a class="nav-link" [class.active]="menu.active" [routerLink]="menu.routerLink" (click)="toggleMenu(menu.routerLink)">{{ menu.name }}</a>
       </li>
     </ul>
   </div>
