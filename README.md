@@ -1,6 +1,6 @@
 # PersonalWebsite
 
-A personal website. Made by Fatih Toker. Angular 5.2.
+A personal website. Made by Fatih Toker. Angular ~~5.2~~ **7.0.0**.
 
 ## Development server
 
