@@ -218,6 +218,12 @@
   dependencies:
     tslib "^1.9.0"
 
+"@ngx-progressbar/router@^5.2.1":
+  version "5.2.1"
+  resolved "https://registry.npmjs.org/@ngx-progressbar/router/-/router-5.2.1.tgz#d0c847126b885db800cd16d354d32f39b7f7f075"
+  dependencies:
+    tslib "^1.9.0"
+
 "@schematics/angular@7.0.2":
   version "7.0.2"
   resolved "https://registry.npmjs.org/@schematics/angular/-/angular-7.0.2.tgz#204f2edc77f3e06ad516e720f456e4847ea0c9ff"

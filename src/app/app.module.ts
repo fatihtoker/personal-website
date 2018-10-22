@@ -17,6 +17,7 @@ import {FlexLayoutModule} from '@angular/flex-layout';
 import { ProjectsComponent } from './projects';
 import {DataService} from './data.service';
 import {NgProgressModule} from '@ngx-progressbar/core';
+import {NgProgressRouterModule} from '@ngx-progressbar/router';
 
 
 
@@ -40,7 +41,8 @@ import {NgProgressModule} from '@ngx-progressbar/core';
     HttpClientModule,
     NgbTooltipModule.forRoot(),
     FlexLayoutModule,
-    NgProgressModule.forRoot()
+    NgProgressModule.forRoot({color: '#fdcb2f'}),
+    NgProgressRouterModule.forRoot()
   ],
   providers: [DataService],
   bootstrap: [AppComponent]
