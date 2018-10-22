@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {DataService} from '../data.service';
 
 @Component({
   selector: 'app-navbar',
@@ -8,41 +9,19 @@ import { Component, OnInit } from '@angular/core';
 export class NavbarComponent implements OnInit {
   displayState = 'none';
   menus = [];
-  constructor() {
+  errors = [];
+  path = '/../../assets/data/navbar-menus/navbar-menus.json';
+  constructor(private dataService: DataService) {
   }
   ngOnInit() {
-    this.menus.push(
-      {
-        name: 'About',
-        routerLink: '/about',
-        active: false
-      },
-      {
-        name: 'Experience',
-        routerLink: '/experience',
-        active: false
-      },
-      {
-        name: 'Education',
-        routerLink: '/education',
-        active: false
-      },
-      {
-        name: 'Skills',
-        routerLink: '/skills',
-        active: false
-      },
-      {
-        name: 'Projects',
-        routerLink: '/projects',
-        active: false
-      },
-      {
-        name: 'Interests',
-        routerLink: '/interests',
-        active: false
-      }
-      );
+    this.getData();
+  }
+  private getData() {
+    this.dataService.get(this.path).subscribe(data => {
+      this.menus = data.data;
+    }, err => {
+      this.errors = err;
+    });
   }
 
   toggleMenu(routerLink = '') {

@@ -15,6 +15,9 @@ import { LandingComponent } from './landing';
 import { NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import { ProjectsComponent } from './projects';
+import {DataService} from './data.service';
+import {NgProgressModule} from '@ngx-progressbar/core';
+
 
 
 
@@ -36,9 +39,10 @@ import { ProjectsComponent } from './projects';
     BrowserModule,
     HttpClientModule,
     NgbTooltipModule.forRoot(),
-    FlexLayoutModule
+    FlexLayoutModule,
+    NgProgressModule.forRoot()
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,0 +1,35 @@
+{
+  "data": [
+    {
+      "name": "About",
+      "routerLink": "/about",
+      "active": false
+    },
+    {
+      "name": "Experience",
+      "routerLink": "/experience",
+      "active": false
+    },
+    {
+      "name": "Education",
+      "routerLink": "/education",
+      "active": false
+    },
+    {
+      "name": "Skills",
+      "routerLink": "/skills",
+      "active": false
+    },
+    {
+      "name": "Projects",
+      "routerLink": "/projects",
+      "active": false
+    },
+    {
+      "name": "Interests",
+      "routerLink": "/interests",
+      "active": false
+    }
+  ]
+}
+
