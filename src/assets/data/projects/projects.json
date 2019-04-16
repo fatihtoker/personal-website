@@ -53,15 +53,60 @@
       "href": "https://aosdestek.anadolu.edu.tr"
     },
     {
-      "title": "Anadolu-Ui",
+      "title": "AUSD",
+      "techs": [
+        {
+          "icon": "fab fa-php",
+          "tooltip": "with Symfony"
+        },
+        {
+          "icon": "fab fa-angular",
+          "tooltip": "version 4.0.1"
+        }
+      ],
+      "desc": "An online platform where teachers can view and evaluate open education exam questions.",
+      "href": "https://ausd.anadolu.edu.tr"
+    },
+    {
+      "title": "AOSODEV",
+      "techs": [
+        {
+          "icon": "fab fa-php",
+          "tooltip": "with Symfony"
+        },
+        {
+          "icon": "fab fa-angular",
+          "tooltip": "version 6.1.0"
+        }
+      ],
+      "desc": "An online platform where teachers can view and evaluate open education homeworks.",
+      "href": "https://aosodev.anadolu.edu.tr"
+    },
+    {
+      "title": "Website-Admin",
+      "techs": [
+        {
+          "icon": "fab fa-php",
+          "tooltip": "with Symfony"
+        },
+        {
+          "icon": "fab fa-angular",
+          "tooltip": "version 6.1.0"
+        }
+      ],
+      "desc": "Website management system for administrators. (This is a local project. No hosting provided.)",
+      "href": "https://github.com/fatihtoker"
+    },
+    {
+      "title": "Tohum-Ui",
       "techs": [
         {
           "icon": "fab fa-angular",
-          "tooltip": "version 5.2"
+          "tooltip": "version 7.0.1"
         }
       ],
-      "desc": "An Angular UI Library with a lot of custom components inside. It is used in other projects. (External link of the library remains secret. One of the projects that uses this library is given instead.)",
-      "href": "https://pbys.anadolu.edu.tr"
+      "desc": "An Angular UI Library with a lot of custom components inside. It is used in other projects.",
+      "href": "https://tohum.anadolu.edu.tr"
     },
     {
       "title": "Manciz Cookies",
@@ -73,6 +118,28 @@
       ],
       "desc": "A fully responsive web app for a new marketing idea. Designed with Bootstrap 4 and hosted with Firebase Hosting.",
       "href": "https://mancizcookies.com"
+    },
+    {
+      "title": "Personal Website",
+      "techs": [
+        {
+          "icon": "fab fa-angular",
+          "tooltip": "version 5.2"
+        }
+      ],
+      "desc": "My online resume including necessary information. Generated with Angular CLI. Designed with a free to use template.",
+      "href": "https://github.com/fatihtoker/personal-website"
+    },
+    {
+      "title": "DF Handcraft",
+      "techs": [
+        {
+          "icon": "fab fa-angular",
+          "tooltip": "version 7.0.1"
+        }
+      ],
+      "desc": "A personal project for a boutique.",
+      "href": "https://github.com/fatihtoker/df-handcraft"
     },
     {
       "title": "Haze",
@@ -99,17 +166,6 @@
       ],
       "desc": "A social advertising & communication web application. (Group thesis project for bachelor's degree )",
       "href": "https://github.com/barhantas/bobo"
-    },
-    {
-      "title": "Personal Website",
-      "techs": [
-        {
-          "icon": "fab fa-angular",
-          "tooltip": "version 5.2"
-        }
-      ],
-      "desc": "My online resume including necessary information. Generated with Angular CLI. Designed with a free to use template.",
-      "href": "https://github.com/fatihtoker/personal-website"
     }
   ]
 }
