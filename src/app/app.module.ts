@@ -11,7 +11,6 @@ import { ExperienceComponent } from './experience';
 import { EducationComponent } from './education';
 import { SkillsComponent } from './skills';
 import { InterestsComponent } from './interests';
-import { LandingComponent } from './landing';
 import { NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import { ProjectsComponent } from './projects';
@@ -32,7 +31,6 @@ import {NgProgressRouterModule} from '@ngx-progressbar/router';
     EducationComponent,
     SkillsComponent,
     InterestsComponent,
-    LandingComponent,
     ProjectsComponent,
   ],
   imports: [
@@ -42,7 +40,7 @@ import {NgProgressRouterModule} from '@ngx-progressbar/router';
     NgbTooltipModule.forRoot(),
     FlexLayoutModule,
     NgProgressModule.forRoot({color: '#fdcb2f'}),
-    NgProgressRouterModule.forRoot()
+    NgProgressRouterModule
   ],
   providers: [DataService],
   bootstrap: [AppComponent]
