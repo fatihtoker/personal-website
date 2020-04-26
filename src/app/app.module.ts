@@ -17,6 +17,8 @@ import { ProjectsComponent } from './projects';
 import {DataService} from './data.service';
 import {NgProgressModule} from '@ngx-progressbar/core';
 import {NgProgressRouterModule} from '@ngx-progressbar/router';
+import { PageComponent } from './page/page.component';
+import { QuarantineClockComponent } from './quarantine-clock/quarantine-clock.component';
 
 
 
@@ -32,6 +34,8 @@ import {NgProgressRouterModule} from '@ngx-progressbar/router';
     SkillsComponent,
     InterestsComponent,
     ProjectsComponent,
+    PageComponent,
+    QuarantineClockComponent,
   ],
   imports: [
     AppRoutingModule,
